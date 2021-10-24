@@ -1,9 +1,16 @@
 @charset "UTF-8";
 
-:root{
-  --main-color1: #FF9966;
---main-color2: #003366;
---main-color1-hover: #ff9966d8;
+:root {
+  --main-color1: #ff9966;
+  --main-color2: #003366;
+  --main-color1-hover: #ff9966d8;
+}
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -18,11 +25,12 @@ footer div {
   text-align: center;
 }
 
-.header{
+.header {
   padding: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 5px;
   margin-bottom: 1em;
+  background-color: white;
 }
 
 .logo {
@@ -31,21 +39,22 @@ footer div {
   max-width: 20%;
 }
 
-.nav-bar{
+.nav-bar {
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: white;
 }
 
-.nav-bar  li{
+.nav-bar li {
   background-color: var(--main-color1);
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: 1px solid grey;
   padding: 1em;
   margin: 1vh;
 }
 
-.nav-bar li:hover{
+.nav-bar li:hover {
   cursor: pointer;
   background-color: var(--main-color1-hover);
 }
@@ -56,24 +65,68 @@ ul {
   padding: 0;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+li img {
+  float: right;
+}
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  li img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
 
 [class*="col-"] {
   float: left;
   padding: 15px;
-  /* border: 1px solid red; */
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .row::after {
@@ -82,16 +135,75 @@ ul {
   display: table;
 }
 
-
-path:hover{
+path:hover {
   fill: var(--main-color1);
 }
 
-.Canada{
+.Canada {
   fill: var(--main-color2);
 }
 
-.world-map{
+.Germany {
+  fill: var(--main-color2);
+}
+
+.France {
+  fill: var(--main-color2);
+}
+
+.Italy {
+  fill: var(--main-color2);
+}
+
+.China {
+  fill: var(--main-color2);
+}
+
+.Argentina {
+  fill: var(--main-color2);
+}
+
+.South-Africa {
+  fill: var(--main-color2);
+}
+
+.world-map {
   max-width: 100%;
   max-height: 60vh;
+}
+
+.world-map-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+table.trips {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+table.trips td,
+table.trips th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table.footer {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td.edit {
+  text-align: right;
+}
+
+td img:hover {
+  cursor: pointer;
 }

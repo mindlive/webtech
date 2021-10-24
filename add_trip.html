@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/form.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="assets/logo.svg" alt="SVG mit img Tag laden" />
+    </div>
+    <div class="row">
+      <div class="col-2 nav-bar">
+        <ul>
+          <li>
+            <a href="index.html" rel="noopener noreferrer">
+              Map <img src="assets/icons/map_black_24dp.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="add_trip.html" rel="noopener noreferrer">
+              Add Trip
+              <img src="assets/icons/airplane_ticket_black_24dp.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="Login.html" rel="noopener noreferrer">
+              Logout
+              <img src="assets/icons/logout_black_24dp.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-9">
+        <form action="#">
+          <label for="Name">Name</label><br />
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            value="e.g.weekend in Paris"
+          /><br />
+          <label for="tripStart">Start</label><br />
+          <input type="date" id="tripStart" name="tripStart" value="" /><br />
+          <label for="tripEnd">End</label><br />
+          <input type="date" id="tripEnd" name="tripEnd" value="" /><br />
+          <label for="Destination">Destination</label><br />
+          <input
+            type="text"
+            id="Destination"
+            name="Destination"
+            value="e.g. Paris"
+          /><br /><br />
+          <input
+            class="login-btn"
+            type="button"
+            onclick="alert('Saved')"
+            value="Save"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

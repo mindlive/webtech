@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+html {
+  font-family: "Helevetica", sans-serif;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+.header {
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  margin-bottom: 1em;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  height: auto;
+  width: auto;
+  max-width: 20%;
+}
+
+:root {
+  --main-color1: #ff9966;
+  --main-color-opac: #ff99668a;
+  --main-color2: #003366;
+  --main-color1-hover: #ff9966d8;
+}
+
+.card {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  padding: 15px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--main-color1);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
